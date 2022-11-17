@@ -91,4 +91,22 @@ Remover o produto "Console Xbox Series S" do carrinho
 
 Verificar se o carrinho fica vazio
     Wait Until Page Contains         text=Seu carrinho de compras da Amazon está vazio.
-    
+
+Quando adicionar o produto "Console Xbox Series S" no carrinho
+    Digitar o nome de produto "Xbox Series S" no campo de pesquisa
+    Clicar no botão de pesquisa
+    E um produto da linha "Xbox Series S" deve ser mostrado na página
+    Adicionar o produto "Console Xbox Series S" no carrinho
+
+Então o produto "Console Xbox Series S" deve ser mostrado no carrinho
+    Verificar se o produto "Console Xbox Series S" foi adicionado com sucesso
+
+E existe o produto "Console Xbox Series S" no carrinho
+    Quando adicionar o produto "Console Xbox Series S" no carrinho
+    Então o produto "Console Xbox Series S" deve ser mostrado no carrinho
+
+Quando remover o produto "Console Xbox Series S" do carrinho
+    Remover o produto "Console Xbox Series S" do carrinho
+
+Então o carrinho deve ficar vazio
+    Verificar se o carrinho fica vazio
